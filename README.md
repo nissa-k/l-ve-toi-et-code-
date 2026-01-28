@@ -52,7 +52,7 @@ ouvrir index.html dans un navigateur.
 Le projet est destiné à être publié via Streamlit Community Cloud à partir du dépôt GitHub.
 on tape dans la console : pip install streamlit
 puis : py -m streamlit run app.py
-(Lien à ajouter après publication)
+https://leve-toi-et-code.streamlit.app
 
 ## Auteur 
 Karadag Nissa
