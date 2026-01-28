@@ -30,7 +30,7 @@ Aucun framework ni build n’est nécessaire.
 
 1. Cloner le dépôt :
    ```bash
-   git clone <url-du-repo>
+   git clone https://github.com/nissa-k/l-ve-toi-et-code-.git
 
 ## Ouvrir simplement le fichier
 
