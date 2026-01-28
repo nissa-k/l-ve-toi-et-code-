@@ -10,8 +10,6 @@
   --pad: 16px;
 }
 
-/* Base */
-
 * {
   box-sizing: border-box;
 }
@@ -32,8 +30,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Accessibilité */
-
 .sr {
   position: absolute;
   width: 1px;
@@ -42,15 +38,11 @@ a:hover {
   clip: rect(0,0,0,0);
 }
 
-/* Layout */
-
 .wrap {
   width: min(var(--maxw), 100%);
   margin: auto;
   padding: 18px var(--pad);
 }
-
-/* Header */
 
 .header {
   position: sticky;
@@ -71,8 +63,6 @@ a:hover {
   display: none;
 }
 
-/* Bouton */
-
 .btn {
   display: inline-block;
   width: fit-content;
@@ -89,14 +79,10 @@ a:hover {
   opacity: 0.9;
 }
 
-/* Top layout */
-
 .top {
   display: grid;
   gap: 18px;
 }
-
-/* Hero */
 
 .hero {
   display: grid;
@@ -129,8 +115,6 @@ h1 {
   color: var(--text);
 }
 
-/* Sections */
-
 .section {
   padding: 14px;
   border: 1px solid var(--border);
@@ -148,8 +132,6 @@ h2 {
   color: var(--muted);
 }
 
-/* Cards (général) */
-
 .card {
   padding: 12px;
   border: 1px solid var(--border);
@@ -160,8 +142,6 @@ h2 {
 .muted {
   color: var(--muted);
 }
-
-/* AVIS — version compacte */
 
 .avis {
   padding: 12px;
@@ -190,21 +170,17 @@ h2 {
   color: var(--muted);
 }
 
-/* Desktop only */
 
 .desk {
   display: none;
 }
 
-/* Programme grid */
 
 .grid-4 {
   display: grid;
   gap: 12px;
   margin-top: 10px;
 }
-
-/* Form */
 
 .form {
   display: grid;
@@ -223,8 +199,6 @@ input {
   color: var(--muted);
   font-size: 0.9rem;
 }
-
-/* Footer */
 
 .footer {
   border-top: 1px solid var(--border);
@@ -253,29 +227,24 @@ input {
 .rabbin p {
   color: var(--muted);
 }
-/* Desktop breakpoint */
 
 @media (min-width: 900px) {
 
-  /* Navigation visible en desktop */
   .nav {
     display: flex;
     gap: 16px;
     color: var(--muted);
   }
 
-  /* Sections desktop activées */
   .desk {
     display: block;
   }
 
-  /* Mise en page : hero à gauche, avis à droite */
   .top {
     grid-template-columns: 1.3fr 0.7fr;
     align-items: start;
   }
 
-  /* AVIS : plus lisible en desktop */
   .avis {
     max-width: 320px;
     justify-self: end;
@@ -297,12 +266,10 @@ input {
     font-size: 0.85rem;
   }
 
-  /* Programme : 4 colonnes */
   .grid-4 {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  /* Form : champ + bouton côte à côte */
   .form {
     grid-template-columns: 1fr auto;
     align-items: start;
